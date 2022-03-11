@@ -98,7 +98,7 @@ long double delta_en(int npart, long double box, long double **coord, long doubl
        return en;
 }
 
-//routine for displacing particle (MC move)
+//routine for displacing particle (Metropolis MC move)
 long double mcmove(long double npart, long double box, long double **coord, long double beta, long double rcut, long double dx){
       int sel_part, c;
       long double old_coord[3], den;
